@@ -1,0 +1,182 @@
+body
+{
+    background: #4f4f4f;
+}
+.banner
+{
+    background-image: url('../img/banner-min.jpg');
+    background-position: center center;
+    background-size:cover;
+    height: 400px;
+}
+
+h1,h2{
+    text-align: center;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman';
+}
+.card
+{
+   
+    border: 2px solid #000000;
+}
+.card-img-top
+{
+    border-radius: 3px;
+    border: 2px solid  #492300; 
+}
+.card-body
+{ 
+    border: 2px solid #000000;
+    background: #4f4f4f;
+}
+li
+{
+    border-radius: 12px;
+    border: 2px solid #000000;
+    background: #fff;
+    margin: 3px;
+}
+
+.card-title
+{
+    font-variant: small-caps;
+    text-align: center;
+    color: #fff;
+}
+#colorm{color: white;}
+.imagem
+{
+    width: 40px;
+}
+
+.icon{width: 30px;}
+nav
+{
+  background-color: #492300;
+}
+footer{
+    background-color:#492300;
+    color: white;
+}
+footer li
+{
+    list-style-type:none ;
+    color: rgb(0, 0, 0);
+    background: #d4d4d4;
+    border:3px solid #000000;
+    border-radius: 12px;
+    width: 350px;
+    padding-left: 5px;
+}
+footer li>img
+{
+    margin-right: 15px;
+}
+#home
+{
+    background-image:url('../img/homebg-min-min.jpg');
+    height: 100vh;
+    background-attachment: fixed; 
+    background-position:center center;
+    background-size: cover;
+   
+}
+#frame
+{
+    border: 3px solid green;
+    border-radius: 12px;
+    background-color: #262626;
+    opacity: 40%;
+}
+
+#home.inro{
+    color: #fff;
+    height: 100vh;
+}
+
+#home p{color: #fff;}
+#home.inro.col-md-8{
+   background-color: rgba(0,0,0,0.4);
+}
+.modal-header, .modal-footer
+{
+    background-color: #492300;
+    border:3px solid black ;
+    color: #fff;
+}
+a{text-decoration: none;}
+
+.card:hover
+{
+    box-shadow: 0px 5px  #492300;
+}
+
+.img-fluid
+{
+    border:3px solid #492300 ;
+    border-radius: 12px;
+}
+.col-sm-4
+{
+    position: relative;
+    left: 5%;
+}
+.col-sm-8
+{  
+    font-weight: bold;
+    position: relative;
+    left: 11%;
+    width: 551px;
+    border-radius: 12px;
+    border:3px solid #492300 ;
+}
+.btn-secondary
+{
+    background-color: green;
+    border:3px solid black ;
+}
+
+
+.input-group
+{
+    width: 350px;
+    border:3px solid black ;
+    border-radius: 12px;
+}
+
+.Kinezet
+{
+    background-color: #492300;
+}
+.blog-img
+{
+    border: 3px solid black;
+    border-radius: 12px;
+   
+}
+.col-md-4
+{
+    padding: 20px;
+}
+
+.igazitas
+{
+  padding: 10px;
+   text-align: justify;
+   border: 3px solid black;
+   border-radius: 12px;
+   background: #fff;
+}
+.container{padding: 20px;}
+.keret
+{
+    background-color:#492300 ;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 12px;
+}
+.row
+{
+    padding: 20px;
+}
