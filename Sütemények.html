@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sütemények</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+           <a id="colorm" class="navbar-brand" href="#">
+              <img class="imagem" src="img/logo.png" alt="logo"> Lucky</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link  btn btn-outline-success" aria-current="page" href="index.html">Kezdőlap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  btn btn-outline-success" href="kavefajtak.html">Kavéfajták</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  btn btn-outline-success active" href="Sütemények.html">Sűtemények</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  btn btn-outline-success" href="blog.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  
+        <div class="banner"> </div>
+    
+      </header>
+      <div class="container">
+        <div class="row">
+            <h1 class="m-3">Lucky - Sűtemények</h1> <!--m auto vagy 0...5  mx my mt  mb-->
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#SimaMuffinok">
+             
+                <img src="img/suti1.png" class="card-img-top" alt="SimaMuffinok">
+                <div class="card-body">
+                  <h5 class="card-title">Sima Muffinok</h5>
+               
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#GyőriÉdes">
+                <img src="img/suti2.png" class="card-img-top" alt="GyőriÉdes">
+                <div class="card-body">
+                  <h5 class="card-title">Győri Édes </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#krémkeksz">
+                <img src="img/suti3.png" class="card-img-top" alt="krémkeksz">
+                <div class="card-body">
+                  <h5 class="card-title">krém keksz </h5>  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#CsokisMuffinok">
+                <img src="img/suti4.png" class="card-img-top" alt="CsokisMuffinok">
+                <div class="card-body">
+                  <h5 class="card-title"> Csokis Muffinok</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card"data-bs-toggle="modal" data-bs-target="#CsokisKeksz">
+                  <img src="img/suti5.png" class="card-img-top" alt="CsokisKeksz">
+                  <div class="card-body">
+                    <h5 class="card-title">Csokis Keksz</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card"data-bs-toggle="modal" data-bs-target="#Kávéssütik">
+                  <img src="img/suti6.png" class="card-img-top" alt="Kávéssütik">
+                  <div class="card-body">
+                    <h5 class="card-title">Kávés sütik</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+    </div>
+    <footer>
+        <div class="row">
+          <div class="col-md-6 offset-1">
+                <h3>Elérhetőség</h3>        
+                <ul>
+                  <li><img src="img/uzenet.png"  class="icon "> 6932 Budapest Liszt Ferenc tér 17.</li>
+                  <li><img src="img/telefon.png" class="icon "> +36 30 145 4242</li>
+                  <li><img src="img/uzenet.png"  class="icon "> luckykavezo12@gamail.com</li>
+                </ul>  
+          </div>
+          <div class="col-md-3">
+            <h3>Feliratkozás hírlevélre</h3>
+  
+              <form>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon2" id="email">
+                  <span class="input-group-text" id="basic-addon2"  onclick="feliratkozas()">Feliratkozás</span>
+                </div>
+              </div>
+              </form>
+              <p  class="text-center">Minden jóg fenntartva: &copy;Lucky 2023</p>
+        </div>
+      </footer>
+
+<!--1-->
+<div class="modal" id="SimaMuffinok" tabindex="-1">
+    <div class="modal-dialog  modal-xl"> <!--1 modal-xl-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sima Muffinok</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fulid">
+            <div class="row">
+              <div class="col-sm-4"><img src="img/suti1.png" class="img-fluid" alt="SimaMuffinok"></div>
+              <div class="col-sm-8">
+                <p>
+                  A muffin tejesen magától értetődő sütemény, ha hirtelen kiderül, hogy másnap esemény van, és vinni kell valamit. Ilyenkor nem esünk pánikba, hanem elővesszük ezt a receptet, és csupa otthon található alapanyagból, nagyjából öt perc munkával, muffinokat sütünk.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--2-->
+<div class="modal" id="GyőriÉdes" tabindex="-1">
+    <div class="modal-dialog  modal-xl"> <!-- modal-xl-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Győri Édes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fulid">
+            <div class="row">
+              <div class="col-sm-4"><img src="img/suti2.png" class="img-fluid" alt="GyőriÉdes"></div>
+              <div class="col-sm-8">
+                <p>Ki ne szeretné a kekszet, amit számtalan formában, ízben el lehet készíteni. A legjobb benne, hogy gyorsan és nagyon egyszerűen összedobható a tészta, aztán pedig csupán pár perc sütés, és már kész is van. Válogatásunkban a legfinomabb keksz recepteket gyűjtöttük egybe. Édes, vajas, ropogós, sós kekszek hagyományosan készítve, de glutén-, laktóz-, tojás- és cukormentes változatokat is találhattok. Próbáljatok ki minél többet. Biztosan megtaláljátok a kedvenceteket.</p>
+              
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--3-->
+<div class="modal" id="krémkeksz" tabindex="-1">
+    <div class="modal-dialog  modal-xl"> <!-- modal-xl-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Krém Keksz</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fulid">
+            <div class="row">
+              <div class="col-sm-4"><img src="img/suti3.png" class="img-fluid" alt="krémkeksz"></div>
+              <div class="col-sm-8">
+                <p>A pudingport a cukorral és a tejjel csomómentesre keverjük, és sűrű pudingot főzünk belőle, majd hagyjuk kihűlni. A hideg tejszínt kemény habbá verjük, közben hozzáadjuk a fixálót, és a két krémet egy spatulával összeforgatjuk.
+
+                  A tepsi aljára rakunk egy réteg kekszet, erre jöhet a krém fele, egy újabb réteg keksz, végül a maradék krém, és egy réteg keksszel zárjuk a sort. Felolvasztjuk a csokit a tejszínnel, majd lekenjük vele a sütit. Egy napra a hűtőbe tesszük, másnap kockákra vágva tálaljuk.</p>
+               
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--4-->
+<div class="modal" id="CsokisMuffinok" tabindex="-1">
+    <div class="modal-dialog  modal-xl"> <!-- modal-xl-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Csokis Muffinok </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fulid">
+            <div class="row">
+              <div class="col-sm-4"><img src="img/suti4.png" class="img-fluid" alt="CsokisMuffinok"></div>
+              <div class="col-sm-8">
+                <p>A csokis muffin elkészítéséhez egy tálban összekeverjük a száraz hozzávalókat: a lisztet, a sütőport, a cukrot és a kakaóport.
+                  Folyamatos keverés mellett hozzáadjuk a tojásokat, a megolvasztott vajat, a baracklekvárt, végül pedig a darabokra tört étcsokoládét.
+                  A tésztát egy 12 darabos, papírkapszlikkal kibélelt muffintepsibe adagoljuk, majd a 170 fokra előmelegített sütőben 20-25 perc alatt készre sütjük.</p>
+            
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--5-->
+<div class="modal" id="CsokisKeksz" tabindex="-1">
+    <div class="modal-dialog  modal-xl"> <!-- modal-xl-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Csokis Keksz </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fulid">
+            <div class="row">
+              <div class="col-sm-4"><img src="img/suti5.png" class="img-fluid" alt="CsokisKeksz"></div>
+              <div class="col-sm-8">
+                <p>A vajat habosra keverjük a cukorral, majd hozzáadjuk a vaníliás cukrot és a tojást.
+                  A liszttel elkeverjük a sütőport és a sót, majd a vajas masszához keverjük.
+                  Végül hozzákeverjük a csokipasztillát vagy az aprórá vágott csokoládét.
+                  A masszából egymástól távol kis halmokat teszünk a sütőpapírral bélelt tepsibe.
+                  180 fokra előmelegített sütőben kb. 10 percig sütjük (ha a széle már szép aranyszínű, akkor jó, nem lesz kemény, puha marad, ahogy hűl, meg is szilárdul és ropogós lesz). </p>
+               
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--6-->
+<div class="modal" id="Kávéssütik" tabindex="-1">
+    <div class="modal-dialog  modal-xl"> <!-- modal-xl-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Kávés Sütik </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fulid">
+            <div class="row">
+              <div class="col-sm-4"><img src="img/suti6.png" class="img-fluid" alt="Kávéssütik"></div>
+              <div class="col-sm-8">
+                <p>A reggel el sem indulhat egy egy finom, aromás eszpresszó, kapucsínó vagy hosszú kávé nélkül? Ha nemcsak folyékony formában szereti a kávét, hanem fagylaltokban vagy süteményekben is, válogasson kávés finomságaink közül. Süssön kávés szeletet, muffint, piskótát, kávékrémes tortát; és teljessé teheti nemcsak a reggelit, hanem az ebédet is.</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script>    
+      function feliratkozas()
+      {
+        let email=document.getElementById('email').value;
+        
+        
+
+        if(email=="")
+        {
+            document.write("Kérem adja meg az email címét!");
+        }
+        else
+        {
+          document.write("Sikeresen feliratkozot a levelunkre:(Koszonjuk)");
+        }  
+      }
+   
+     
+  </script>
+ 
+
+ 
+  </body>
+</html>

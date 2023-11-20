@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lucky - Kavéfajták</title>
+
+</head>
+<body>
+  
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+         <a id="colorm" class="navbar-brand" href="#">
+            <img class="imagem" src="img/logo.png" alt="logo"> Lucky</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link  btn btn-outline-success" aria-current="page" href="index.html">Kezdőlap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  btn btn-outline-success active" href="kavefajtak.html">Kavéfajták</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  btn btn-outline-success" href="Sütemények.html">Sűtemények</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  btn btn-outline-success" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner"> </div>
+       
+    </header>
+   
+
+    <div class="container">
+        <div class="row">
+            <h1 class="m-3">Lucky - Kávéfajták</h1> <!--m auto vagy 0...5  mx my mt  mb-->
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+           
+              <div class="card"data-bs-toggle="modal" data-bs-target="#Expresszó">
+             
+                <img src="img/fajta1.png" class="card-img-top" alt="Expreszó">
+                <div class="card-body">
+                  <h5 class="card-title">Expresszó</h5>
+               
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#Kapucsinó">
+                <img src="img/fajta2.png" class="card-img-top" alt="Kapucsinó">
+                <div class="card-body">
+                  <h5 class="card-title">Kapucsinó</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#Ristretto">
+                <img src="img/fajta3.png" class="card-img-top" alt="risreszto">
+                <div class="card-body">
+                  <h5 class="card-title">Ristretto</h5>  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#JegesKávé">
+                <img src="img/fajta4.png" class="card-img-top" alt="Jegeskave">
+                <div class="card-body">
+                  <h5 class="card-title"> Jeges Kávé</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card"data-bs-toggle="modal" data-bs-target="#FeketeKávé">
+                  <img src="img/fajta5.png" class="card-img-top" alt="FeketeKávé">
+                  <div class="card-body">
+                    <h5 class="card-title">Fekete Kávé</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <br>
+    </div>
+
+    <footer>
+      <div class="row">
+        
+        <div class="col-md-6 offset-1">
+              <h3>Elérhetőség</h3>        
+              <ul>
+                <li><img src="img/uzenet.png"  class="icon "> 6932 Budapest Liszt Ferenc tér 17.</li>
+                <li><img src="img/telefon.png" class="icon "> +36 30 145 4242</li>
+                <li><img src="img/uzenet.png"  class="icon "> luckykavezo12@gamail.com</li>
+              </ul>  
+        </div>
+
+        <div class="col-md-3">
+          <h3>Feliratkozás hírlevélre</h3>
+
+            <form>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon2" id="email">
+                <span class="input-group-text" id="basic-addon2"  onclick="feliratkozas()">Feliratkozás</span>
+              </div>
+            </div>
+            </form>
+              <p  class="text-center">Minden jóg fenntartva: &copy;Lucky 2023</p>
+      </div>
+
+
+    </footer>
+<!--1-->
+    <div class="modal" id="Expresszó" tabindex="-1">
+      <div class="modal-dialog  modal-xl"> <!--1 modal-xl-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Expresszó</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fulid">
+              <div class="row">
+                <div class="col-sm-4"><img src="img/fajta1.png" class="img-fluid" alt="Expresszó"></div>
+                <div class="col-sm-8"><p>Az Expresszó Veszprém legnagyobb és legnépszerűbbszórakozóhelye, ahol mindenki megtalálja az ízlésének megfelelő programot. Az egész évben működő rendezvényhelyszín változatos kínálattal rendelkezik, hiszen nem csak könnyűzenei, de kulturális események helyszínéül is szolgál. A legnagyobb hétvégi bulikat is itt tartják, amikor is az elektronikus zene kerül a középpontba.</p>
+                  <p>Az Expresszó kizárólag hétvégente elérhető, péntek és szombat esténként nyitja meg kapuit a szórakozni vágyók előtt. Érdemes mindig informálódni az éppen aktuális rendezvényekről, hiszen a legtöbb esetben a jegyvásárlás elővétellel történik.</p>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--2-->
+    <div class="modal" id="Kapucsinó" tabindex="-1">
+      <div class="modal-dialog  modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Kapucsinó</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fulid">
+              <div class="row">
+                <div class="col-sm-4"><img src="img/fajta2.png" class="img-fluid" alt="Kapucsinó"></div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat laudantium, omnis ex dolorem facere aliquam atque ut, exercitationem fugit voluptate dolores quod iure at magni molestiae perferendis itaque velit?</p>
+                  <p>Sunt nesciunt, fuga odio ut consequatur natus vel dolor delectus consequuntur culpa expedita totam itaque dolore et magni veniam esse officia exercitationem qui, ad atque quia. Exercitationem voluptatem nobis debitis?</p>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--3-->
+<div class="modal" id="Ristretto" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ristretto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fulid">
+          <div class="row">
+            <div class="col-sm-4"><img src="img/fajta3.png" class="img-fluid" alt="Ristretto"></div>
+            <div class="col-sm-8">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat laudantium, omnis ex dolorem facere aliquam atque ut, exercitationem fugit voluptate dolores quod iure at magni molestiae perferendis itaque velit?</p>
+              <p>Sunt nesciunt, fuga odio ut consequatur natus vel dolor delectus consequuntur culpa expedita totam itaque dolore et magni veniam esse officia exercitationem qui, ad atque quia. Exercitationem voluptatem nobis debitis?</p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--4-->
+<div class="modal" id="JegesKávé" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Jeges Kávé</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fulid">
+          <div class="row">
+            <div class="col-sm-4"><img src="img/fajta4.png" class="img-fluid" alt="Jeges Kávé"></div>
+            <div class="col-sm-8">
+              <p>A jegeskávét kifejezetten a tikkasztóan meleg napokra ajánlom, amikor nemcsak koffeinre van szükséged, de egy kis hideg felfrissülésre is. A jegeskávé elkészítése szintén rendkívül egyszerű, még a Café latte-nál is sokkal könnyebb.</p>
+              <p>Ez is koffeinmentes, ahogy a nagy dobozos verzió is. Különösebben nagy eltérést nem tapasztalhatunk a másikhoz képest, annyi talán, hogy ebben az a jellegzetes égett műanyag íz egy kicsi visszafogottabb, de bombasikernek így sem neveznénk.</p>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--5-->
+<div class="modal" id="FeketeKávé" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Fekete Kávé</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fulid">
+          <div class="row">
+            <div class="col-sm-4"><img src="img/fajta5.png" class="img-fluid" alt="Fekete Kávé"></div>
+            <div class="col-sm-8">
+              <p>A fekete kávé a feketére, tehát legerősebben pörkölt kávészemekből készült főzet. Pörkölését tekintve a kávé lehet még közepesen és enyhén pörkölt. A kávé világszerte elterjedt és fogyasztott ital.</p>
+              <p>Bizonyítottan pozitív élettani hatása van - elősegíti az emésztést és az agy működését. Elkészítésének és tálalásának világszerte eltérő hagyományait találjuk. Európában először a franciák kezdtek hódolni e szenvedélynek a XVII. század végén - étkezések után szolgálták fel. Manapság Finnországban és Norvégiában fogyasztják egy főre kivetítve a legtöbb kávét.</p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script>
+        function feliratkozas()
+        {
+          let email=document.getElementById('email').value;
+          if(email=="")
+          {
+              document.write("Kérem adja meg az email címét!");
+          }
+          else
+          {
+            document.write("Sikeresen feliratkozot a levelunkre:(Koszonjuk)");
+          }
+        }
+    </script>
+
+</body>
+</html>
